@@ -63,7 +63,7 @@ async function run() {
             res.json(orders);
         });
 
-        //Delete API
+        //Delete order
         app.delete('/orders/:id', async (req, res) => {
             const id = req.params.id;
             const query = { _id: ObjectId(id) };
