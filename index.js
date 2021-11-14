@@ -23,6 +23,7 @@ async function run() {
         const ordersCollection = database.collection('orders');
         const usersCollection = database.collection('users');
         const reviewsCollection = database.collection('reviews');
+        const guidesCollection = database.collection('guides');
 
 
         //GET products api
@@ -122,6 +123,13 @@ async function run() {
             const result = await reviewsCollection.insertOne(review);
             // console.log(result);
             res.json(result);
+        });
+
+        //GET guides api
+        app.get('/guides', async (req, res) => {
+            const cursor = guidesCollection.find({});
+            const guides = await cursor.toArray();
+            res.json(guides);
         });
     }
     finally {
