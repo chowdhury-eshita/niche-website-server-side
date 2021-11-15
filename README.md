@@ -1,8 +1,8 @@
 # Lens Finder
 
-### Live Site:(https://lens-finder.web.app/)
+## Live Site:(https://lens-finder.web.app/)
 
-### Client Side Code:(https://github.com/programming-hero-web-course-4/niche-website-client-side-chowdhury-eshita)
+## Client Side Code:(https://github.com/programming-hero-web-course-4/niche-website-client-side-chowdhury-eshita)
 
 ## Description:
 - This is a Niche website for camera lens.
